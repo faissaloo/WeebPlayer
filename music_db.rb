@@ -93,8 +93,8 @@ class MusicDB
 		song_info = Ffprober::Parser.from_file(path)
 		tags = song_info.format.tags
 		name = tags[:TITLE] || tags[:title]
-		artist_name = tags[:ARTIST] || tags[:artist]
-		album_name = tags[:ALBUM] || tags[:album]
+		artist_name = tags[:ARTIST] || tags[:artist] || "No Artist"
+		album_name = tags[:ALBUM] || tags[:album] || "No Album"
 		duration = song_info.audio_streams.first.duration
 
     artist = find(table: :artists, key: :name, value: artist_name)
