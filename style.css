@@ -1,0 +1,19 @@
+a {
+  color: cyan;
+  text-decoration: none;
+}
+.now-playing {
+  text-align: center;
+  float: none;
+}
+body {
+  background-color: black;
+  color: white;
+  float: left;
+  padding: 1em;
+}
+html {
+  background-image: url("https://wallpaperaccess.com/full/339926.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
